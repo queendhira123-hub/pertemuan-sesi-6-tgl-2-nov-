@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Workshop Web | Tugas JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="layout">
+
+    <!-- Kolom kiri: sapaan yang berubah mengikuti input nama (Manipulasi DOM) -->
+    <section class="intro">
+      <button id="themeToggle" class="ghost" type="button">Mode gelap</button>
+      <h1 id="greeting">Halo, calon peserta!</h1>
+      <p id="greetingSub">Isi formulir di samping untuk mengamankan satu kursi di Workshop Web Dasar.</p>
+      <ul class="facts">
+        <li>Sabtu, 5 hari penuh HTML, CSS, dan JavaScript</li>
+        <li>Maksimal 30 peserta</li>
+        <li>Gratis untuk mahasiswa</li>
+      </ul>
+    </section>
+
+    <!-- Kolom kanan: formulir pendaftaran -->
+    <section class="card" aria-labelledby="formTitle">
+      <h2 id="formTitle">Formulir pendaftaran</h2>
+
+      <form id="registerForm" novalidate>
+        <div class="field">
+          <label for="nama">Nama lengkap</label>
+          <input type="text" id="nama" name="nama" autocomplete="name" placeholder="Contoh: Sari Wulandari">
+          <small class="error" id="namaError" role="alert"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="nama@kampus.ac.id">
+          <small class="error" id="emailError" role="alert"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="password-row">
+            <input type="password" id="password" name="password" autocomplete="new-password" placeholder="Minimal 8 karakter">
+            <button type="button" id="togglePassword" class="ghost">Tampilkan</button>
+          </div>
+          <div class="meter" aria-hidden="true"><span id="meterBar"></span></div>
+          <small class="hint" id="meterText">Kekuatan password: belum diisi</small>
+          <small class="error" id="passwordError" role="alert"></small>
+        </div>
+
+        <button type="submit" class="primary">Daftar sekarang</button>
+      </form>
+
+      <!-- Muncul setelah semua validasi lolos -->
+      <div id="successBox" class="success" hidden>
+        <h3 id="successTitle"></h3>
+        <p id="successText"></p>
+        <button type="button" id="resetBtn" class="ghost">Daftarkan peserta lain</button>
+      </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

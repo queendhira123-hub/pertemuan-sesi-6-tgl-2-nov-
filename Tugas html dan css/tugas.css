@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beberapa Link</title>
+  <style>
+    body {
+      margin: 20px 70px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+    }
+
+    hr {
+      border: none;
+      border-top: 3px solid #333333;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #e8451e;
+      font-family: "Times New Roman", serif;
+      font-size: 20px;
+    }
+
+    ul, ol {
+      font-size: 10px;
+      color: #1a0dab;
+    }
+
+    a {
+      color: #1a0dab;
+    }
+
+    a.kik {
+      font-size: 10px;
+    }
+
+    h4 {
+      color: #e8451e;
+      font-style: italic;
+      font-size: 11px;
+    }
+
+    p {
+      color: #2e8b1e;
+      font-size: 9px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <hr>
+
+  <h2>Hallo. Ini ada beberapa link</h2>
+
+  <!-- Daftar tidak bernomor -->
+  <ul>
+    <li><a href="#">Link1</a></li>
+    <li><a href="#">Link2</a></li>
+    <li><a href="#">Link3</a></li>
+    <li><a href="#">Link4</a></li>
+    <li><a href="#">Link5</a></li>
+  </ul>
+
+  <!-- Daftar bernomor -->
+  <ol>
+    <li><a href="#">Link6</a></li>
+    <li><a href="#">Link7</a></li>
+    <li><a href="#">Link8</a></li>
+    <li><a href="#">Link9</a></li>
+    <li><a href="#">Link10</a></li>
+  </ol>
+
+  <a href="#" class="kik">klik Disini</a>
+
+  <h4>Kota Bandung</h4>
+
+  <p>
+    Kota Bandung merupakan sebuah kota untuk kota ini, karena pada zaman dulu kota ini dikelilingi
+    oleh pegunungan dan memiliki banyak pepohonan dan bunga-bunga yang tumbuh subur. Sekain itu
+    Bandung dikenal sebagai Paris van Java, kota kembang, kota kembang-kembangnya. Selain itu kota
+    Bandung juga dikenal sebagai kota belanja, dengan mall dan factory outlet yang banyak tersebar
+    di kota ini.
+  </p>
+
+  <p>
+    Bandung akan menjadi salah satu kota tuan rumah penyelenggara Asian Games 2018. Infrastruktur
+    yang sedang dibangun termasuk Metro Kapsul, sejenis sistem MRT atau People mover yang
+    dikembangkan sendiri.
+  </p>
+
+</body>
+</html>
